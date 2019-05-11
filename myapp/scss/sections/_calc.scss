@@ -17,6 +17,7 @@
         font-size: 20px;
         line-height: 24px;
         line-height: 1.2;
+        padding: 10px;
         &:before {
             position: absolute;
             content: "";
@@ -28,11 +29,25 @@
         }
     }
     &__motivation {
+        max-width: 472px;
+        padding: 10px;
         font-family: "BadScript";
         font-weight: 400px;
         font-size: 17px;
         line-height: 30px;
-
+        background-color: #cdb790;
+        position: relative;
+        transform: rotate(10deg);
+        &:before {
+            position: absolute;
+            content: "";
+            background-color: #b59e7c;
+            width: 120%;
+            height: 100%;
+            right: 0;
+            bottom: 10%;
+            transform: rotate(-10deg);
+        }
     }
     &__action {
         text-align: center;
@@ -40,5 +55,19 @@
         line-height: 30px;
         color: #fff;
         background-color: #926038;
+        max-width: 325px;
+        position: relative;
+        padding: 10px;
+        &:before {
+            position: absolute;
+            content: "";
+            background: url(../img/skrep.png) no-repeat;
+            background-size: 100%;
+            width: 75px;
+            height: 122px;
+            right: 0;
+            top: 0;
+            transform: rotate(-10deg);
+        }
     }
 }
