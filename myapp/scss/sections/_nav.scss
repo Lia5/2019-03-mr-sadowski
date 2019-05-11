@@ -1,0 +1,72 @@
+nav {
+    color: #fff;
+    a {
+        color: #fff;
+        display: block;
+        box-shadow: 18px 4px 10px -9px rgba(63,63,61,1);
+        background-color: #ae8864;
+        text-transform: uppercase;
+        font-family: "Sunday";
+        min-width: 174px;
+        text-align: center;
+
+    }
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reg {
+    display: flex;
+}
+.menu-toggle {
+    display: none;
+}
+
+.menu-wrap {
+    width: 100%;
+}
+
+
+
+
+
+
+.toggle-menu {
+    display: none;
+}
+.cross {
+    display: none;
+}
+.main-menu {
+    width: 90%;
+    margin: 0 auto;
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    a  {
+        display: block;
+        padding: 20px 30px;
+    }
+    li {
+        position: relative;
+        z-index: 1;
+        &:nth-child(1) {
+            bottom: 28px;
+        }
+        &:nth-child(2) {
+            bottom: 38px;
+        }
+        &:nth-child(3) {
+            bottom: 48px;
+        }
+        &:nth-child(4) {
+            bottom: 58px;
+        }
+        &:nth-child(5) {
+            bottom: 68px;
+        }
+    }
+}

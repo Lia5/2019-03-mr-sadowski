@@ -1,0 +1,25 @@
+
+.header {
+    position: relative;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #efe3d5;
+    width: 100%;
+    box-shadow: 20px 10px 30px 0px rgba(63,63,61,1);
+    &__contacts {
+        color: #000;
+        position: absolute;
+        right: 62px;
+        top: 0;
+    }
+}
+.contact__item {
+    display: block;
+    text-align: right;
+}
+
+
+
+//header

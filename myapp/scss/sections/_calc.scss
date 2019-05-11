@@ -1,0 +1,14 @@
+.calc {
+    
+    &__title {
+        background: url(../img/bg-calc.png) no-repeat;
+        padding: 61px 18px 62px;
+        margin-top: -77px;
+        margin-left: -9px;
+        position: relative;
+    }
+    &__body {
+        max-width: 1155px;
+        background-color: #d8c6ac;
+    }
+}

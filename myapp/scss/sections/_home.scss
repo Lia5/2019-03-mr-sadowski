@@ -1,0 +1,95 @@
+.home {
+    background: url(../img/bg-tale.png) no-repeat;
+    padding: 93px 103px 89px 20px;
+    margin-top: -74px;
+    position: relative;
+}
+.tale-slider {
+    max-width: 813px;
+    margin: 0 auto;
+}
+.slick-arrow {
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: url('../img/icons/arrow.svg') no-repeat;
+    background-size: 40%;
+    background-position: center;
+
+}
+.arrow-prev {
+    left: -73px
+}
+.arrow-next {
+    right: -73px;
+    transform: translate(0, -50%) rotate(180deg);
+}
+.tale {
+    &__item {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    &__var {
+        position: absolute;
+        color: #000000;
+        font-family: "BadScript";
+        font-size: 24px;
+        font-weight: 400;
+        width: 324px;
+        display: block;
+        padding: 20px;
+        text-align: center;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__var1 {
+        left: 59px;
+        bottom: 63px;
+    }
+    &__var2 {
+        right: 42px;
+        bottom: 63px;
+    }
+    &__var3 {
+        left: 50px;
+        bottom: 51px;
+    }
+    &__var4 {
+        right: 50px;
+        bottom: 51px;
+    }
+    &__var5 {
+        width: auto;
+        right: 299px;
+        bottom: 257px;
+    }
+    &__var6 {
+        width: auto;
+        right: 210px;
+        bottom: 257px;
+    }
+    &__var7 {
+        width: auto;
+        right: 94px;
+        bottom: 257px;
+    }  
+    &__form {
+        max-width: 601px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        padding: 67px 71px 63px;
+        &>p {
+            max-width: 254px;
+        }
+    }  
+     
+}

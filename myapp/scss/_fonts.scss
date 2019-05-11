@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face("CaviarDreams", "../fonts/CaviarDreams-regular/CaviarDreams-regular", 400);
+@include font-face("CaviarDreams", "../fonts/CaviarDreams-Bold/CaviarDreams-Bold", 700);
+@include font-face("a_LCDNova", "../fonts/a_LCDNova-regular/a_LCDNova-regular", 400);
+@include font-face("TrixieCyr-Plain", "../fonts/TrixieCyr-Plain/TrixieCyr-Plain", 400);
+@include font-face("BadScript", "../fonts/BadScript-regular/BadScript-regular", 400);
+@include font-face("Sunday", "../fonts/Sunday-regular/Sunday-regular", 400);
