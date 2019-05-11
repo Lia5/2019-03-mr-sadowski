@@ -11,4 +11,34 @@
         max-width: 1155px;
         background-color: #d8c6ac;
     }
+    &__description {
+        max-width: 290px;
+        background: #BEA285;
+        font-size: 20px;
+        line-height: 24px;
+        line-height: 1.2;
+        &:before {
+            position: absolute;
+            content: "";
+            background-color: #957351;
+            width: 30px;
+            width: 60%;
+            left: -30px;
+            bottom: 0;
+        }
+    }
+    &__motivation {
+        font-family: "BadScript";
+        font-weight: 400px;
+        font-size: 17px;
+        line-height: 30px;
+
+    }
+    &__action {
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+        background-color: #926038;
+    }
 }
