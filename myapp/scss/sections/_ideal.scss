@@ -1,0 +1,20 @@
+.ideal {
+    max-width: 1194px;
+    margin: 0 auto;
+    padding: 95px 114px 100px 187px;
+    min-height: 1064px;
+    background: url("../img/bg-ideal.png") no-repeat;
+    background-size: contain;
+    &__title {
+        color: #000;
+        &-wrap {
+            max-width: 663px;
+            margin-left: auto;
+            margin-bottom: 60px;
+        }
+    }
+    &__body {
+        max-width: 245px;
+        padding: 10px;
+    }
+}

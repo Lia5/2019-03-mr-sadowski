@@ -2,7 +2,34 @@ secton
     .wrap
         .calc
             .title.calc__title Калькулятор стоимости
-            .calc__body
+            .calc__top
                 .calc__description.shadow Здесь вы можете узнать примерную стоимость услуг по уходу за садом.
                 .calc__motivation.shadow Дополнительный текст, призыв к действию возможно, дополнительный текст, призыв к действию возможно.
                 .calc__action.shadow Акция ак ция акц ия акция акц ия акция кцияакция акция 
+            .calc__body-wrap 
+                .calc__body.shadow
+                    .calc__main
+                        form
+                            .calc__result 00000
+                            .form-line
+                                input(type="range")
+                            .form-line
+                                input(type="range")
+                            .form-line
+                                input(type="range")
+                            .form-line.last-range
+                                input(type="range")
+                            
+                            .form-line.calc__bottom
+                                .form-group
+                                    .input-agree
+                                        input(type="radio" name="period" class="agree" id="period1")
+                                        label(for="period1" class="checkbox-item") Постоянное обслуживание
+                                    .input-agree
+                                        input(type="radio" name="period" class="agree" id="period2")
+                                        label(for="period2" class="checkbox-item") Разовый выезд
+                                .form-group
+                                    .btn
+                                        input( type="submit" value="Отправить")
+                    .calc__img
+                        img(src="img/calc-img.png", alt="flower")

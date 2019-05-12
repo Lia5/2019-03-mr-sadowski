@@ -87,18 +87,10 @@ ul,li {
 	margin: 0;
 	padding: 0;
 }
-.primary-text {
-	// font-family: $second-font;
-	text-transform: uppercase;
-	font-size: 10px;
-	letter-spacing: 4px;
-}
 .subtitle {
-	// font-family: $title-font;
+	text-align: center;
 	text-transform: uppercase;
-	font-size: 12px;
-	letter-spacing: 12px;
-	color: #000;
+	font-size: 40px;
 }
 .title {
 	color: #1d1d1b;
@@ -131,6 +123,9 @@ ul,li {
 	}
 	&:disabled {
 		color: #4e5052;
+	}
+	input {
+		cursor: pointer;
 	}
 }
 
@@ -213,8 +208,8 @@ input {
 @import "sections/nav"; 
 @import "sections/home"; 
 @import "sections/calc"; 
-
-
+@import "sections/history"; 
+@import "sections/ideal"; 
 
 
 @import "sections/footer"; 
