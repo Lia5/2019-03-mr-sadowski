@@ -1,11 +1,12 @@
 .calc {
-    
+    margin-left: 29px;
     &__title {
         background: url(../img/bg-calc.png) no-repeat;
-        padding: 61px 18px 62px;
+        padding: 53px 18px 57px;
         margin-top: -77px;
         margin-left: -9px;
         position: relative;
+        z-index: 1;
     }
     &__top {
         position: relative;
@@ -15,7 +16,7 @@
         max-width: 1155px;
 
         background-color: #d8c6ac;
-        padding: 0 160px 0;
+        padding: 0 144px 0;
     }
     &__description {
         position: relative;
@@ -32,12 +33,14 @@
             width: 30px;
             height: 60%;
             left: -30px;
-            bottom: 0;
+            bottom: -1px;
         }
     }
     &__motivation {
-        max-width: 380px;
-        padding: 50px 10px 10px;
+      margin-right: 45px;
+      margin-top: -20px;
+      max-width: 397px;
+      padding: 54px 7px 20px 33px;
         font-family: "BadScript";
         font-weight: 400;
         font-size: 17px;
@@ -49,10 +52,10 @@
             position: absolute;
             content: "";
             background-color: #b59e7c;
-            width: 120%;
-            height: 100%;
+            width: 109%;
+            height: 122%;
             right: 0;
-            bottom: 10%;
+            bottom: -39%;
             transform: rotate(+353deg);
             z-index: -1;
         }
@@ -74,12 +77,13 @@
         line-height: 30px;
         color: #fff;
         background-color: #926038;
-        max-width: 173px;
+        max-width: 213px;
         position: absolute;
-        right: 0;
-        top: 0;
-        padding: 102px 20px 20px;
+        right: 0px;
+        top: 37px;
+        padding: 89px 20px 37px;
         transform: rotate(-338deg);
+        font-size: 30px;
         &:before {
             position: absolute;
             content: "";
@@ -106,8 +110,9 @@
         }
     }
     &__main {  
-        padding: 10px 47px 40px 15px;
-        width: 626px;
+      padding: 22px 53px 93px 15px;
+      width: 760px;
+      position: relative;
         background: url(../img/calc.png) no-repeat;
         background-size: contain;
     }
@@ -117,12 +122,12 @@
         }
     }
     &__result {
-        padding-right: 20px;
+        padding-right: 34px;
         text-align: right;
         color: #000000;
         font-family: "a_LCDNova";
         font-size: 80px;
-        margin-bottom: 89px;
+        margin-bottom: 98px;
     }
     &__bottom {
         padding: 0 0 0 31px;
@@ -138,14 +143,19 @@
             }
         }
     }
+    .input {
+      &-agree {
+        text-transform: uppercase;
+      }
+    }
 }
 
 input[type=range] {
-    margin-bottom: 46px;
+    margin-bottom: 53px;
 }
 .last-range {
     input {
-        margin-bottom: 15px; 
+        margin-bottom: 23px; 
     }
     
 }

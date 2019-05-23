@@ -1,16 +1,17 @@
 .home {
     background: url(../img/bg-tale.png) no-repeat;
-    padding: 93px 103px 89px 20px;
-    margin-top: -74px;
+    padding: 93px 103px 109px 20px;
+    margin-top: -72px;
     position: relative;
+    margin-left: 36px;
 }
 .tale-slider {
     max-width: 813px;
-    margin: 0 auto;
+    margin-left: 14%;
 }
 .slick-arrow {
     position: absolute;
-    width: 70px;
+    width: 75px;
     height: 100%;
     z-index: 1;
     top: 50%;
@@ -21,10 +22,10 @@
 
 }
 .arrow-prev {
-    left: -73px
+    left: -89px
 }
 .arrow-next {
-    right: -73px;
+    right: -89px;
     transform: translate(0, -50%) rotate(180deg);
 }
 .tale {

@@ -1,38 +1,40 @@
 .history {
     max-width: 1194px;
-    margin-left: -19px;
-    margin-top: -29px;
+    margin-left: 10px;
+    margin-top: -58px;
     background: url("../img/bg-history.png") no-repeat;
     background-size: contain;
     &__title {
         background: url("../img/bg-title-history.png") no-repeat;
         background-size: 101% 100%;
-        padding: 37px 20px;
+        padding: 26px 20px 49px;
         position: relative;
-        top: 168px;
+        top: 175px;
         left: -5px;
         &:before {
             position: absolute;
             content: "";
             background: url(../img/skrep2.png) no-repeat;
             background-size: 100%;
-            width: 63px;
+            width: 75px;
             height: 127px;
             left: 36%;
-            top: -88px;
+            top: -96px;
         }
     }
     &__body {
         display: flex;
         justify-content: space-between;
-        padding: 271px 70px 152px 70px;
+        padding: 277px 70px 152px 70px;
     }
     &__pic {
         width: 50%;
         padding-right: 50px;
         &-wrap {
+            margin-top: 33px;
+            margin-left: 35px;
             background: #fff;
-            padding: 19px 20px 32px 22px;
+            padding: 22px 24px 16px 23px;
             position: relative;
             img {
                 width: 100%;
@@ -47,12 +49,14 @@
 
             }
             &:before {
-                top: 0;
-                left: 0;
+                top: -81px;
+                left: -75px;
             }
             &:after {
-                bottom: 0;
-                right: 0;
+                bottom: -82px;
+                right: -94px;
+                width: 217px;
+                height: 195px;
             }
         }
         &-title {
@@ -71,11 +75,12 @@
         &-title {
             text-transform: uppercase;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 9px;
+            font-size: 25px;
         }
         &-description {
             font-size: 20px;
-            line-height: 1.8;
+            line-height: 2;
         }
     }
 }

@@ -31,7 +31,7 @@
             </div>
             <nav class="main-menu"> 
               <ul>
-                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#" data-menuAnchor="#calc">Калькулятор</a></li>
                 <li><a href="#">О нас</a></li>
                 <li><a href="#">Услуги</a></li>
                 <li><a href="#">Советы</a></li>
@@ -151,7 +151,7 @@
         </div>
       </div>
     </secton>
-    <secton>
+    <secton data-anchor="#calc">
       <div class="wrap">
         <div class="calc">
           <div class="title calc__title">Калькулятор стоимости</div>
@@ -190,7 +190,7 @@
                     </div>
                     <div class="form-group">
                       <div class="btn">
-                        <input type="submit" value="Отправить">
+                        <input type="submit" value="ПОСЧИТАТЬ">
                       </div>
                     </div>
                   </div>
@@ -292,9 +292,62 @@
     </secton>
     <secton>
       <div class="wrap">
-        <div class="history">
-          <div class="title title--white history__title">История</div>
-          <div class="history__body"> </div>
+        <div class="contacts">
+          <div class="contacts__top">
+            <div class="contacts__part">
+              <div class="title contacts__title">Контакты</div>
+              <ul class="contacts__items">
+                <li class="contacts__item">
+                  <div class="contacts__icon"></div><a href="tel:88314230757" class="contacts__text">8 831 423 07 57</a>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__icon contacts__icon--mail"></div><a href="mailto:Hello@sadowski.ru" class="contacts__text">Hello@sadowski.ru</a>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__icon contacts__icon--cite"></div><a href="sadowski.ru" class="contacts__text">sadowski.ru</a>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__icon contacts__icon--insta"></div><a href="https://www.instagram.com/mrsadowski" class="contacts__text">@mrsadowski</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__map-wrap">
+              <div style="background-image: url(img/map.jpg)" class="contacts__map"></div>
+            </div>
+          </div>
+          <div class="contacts__akcia">Акция акция акция акция акция акция акция акция акция акция </div>
+          <div class="contacts__bottom">
+            <div class="contacts__part">
+              <div class="title contacts__title">Позвоните мне</div>
+              <div class="subtitle">Мы будем рады ответить на любые садовые вопросы</div>
+              <div class="contacts__form">
+                <form action="#">
+                  <div class="form-line">
+                    <div class="input--wrap">
+                      <input type="text" name="name" placeholder="Имя" required>
+                    </div>
+                  </div>
+                  <div class="form-line">
+                    <div class="input--wrap">
+                      <input type="phone" name="name" placeholder="Телефон" required>
+                    </div>
+                  </div>
+                  <div class="form-line">
+                    <div class="input-agree">
+                      <input type="checkbox" name="agree" id="agree" class="agree">
+                      <label for="agree" class="checkbox-item">Я даю согласие на обработку персональных данных </label>
+                      <p>С заботой о вашем времени!</p>
+                    </div>
+                  </div>
+                  <div class="form-line">
+                    <div class="btn">
+                      <input type="submit" value="Отправить">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </secton>

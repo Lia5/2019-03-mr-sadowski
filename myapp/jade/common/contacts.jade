@@ -1,5 +1,43 @@
 secton
     .wrap
-        .history
-            .title.title--white.history__title История
-            .history__body 
+        .contacts
+            .contacts__top
+                .contacts__part
+                    .title.contacts__title Контакты
+                    ul.contacts__items
+                        li.contacts__item
+                            .contacts__icon
+                            a(href="tel:88314230757").contacts__text 8 831 423 07 57
+                        li.contacts__item
+                            .contacts__icon.contacts__icon--mail
+                            a(href="mailto:Hello@sadowski.ru").contacts__text Hello@sadowski.ru
+                        li.contacts__item
+                            .contacts__icon.contacts__icon--cite
+                            a(href="sadowski.ru").contacts__text sadowski.ru
+                        li.contacts__item
+                            .contacts__icon.contacts__icon--insta
+                            a(href="https://www.instagram.com/mrsadowski").contacts__text @mrsadowski
+                .contacts__map-wrap
+                    .contacts__map(style="background-image: url(img/map.jpg)")
+            .contacts__akcia Акция акция акция акция акция акция акция акция акция акция 
+            .contacts__bottom
+                .contacts__part
+                    .title.contacts__title Позвоните мне
+                    .subtitle Мы будем рады ответить на любые садовые вопросы
+                    .contacts__form
+                        form(action="#")
+                            .form-line
+                                .input--wrap
+                                    input(type="text" name="name" placeholder="Имя" required)
+                            .form-line
+                                .input--wrap
+                                    input(type="phone" name="name" placeholder="Телефон" required)
+                            .form-line
+                                .input-agree
+                                    input(type="checkbox" name="agree" class="agree" id="agree")
+                                    label(for="agree" class="checkbox-item") Я даю согласие на обработку персональных данных 
+                                    p С заботой о вашем времени!
+                            .form-line
+                                .btn
+                                    input( type="submit" value="Отправить")
+

@@ -59,7 +59,7 @@ $(function() {
             // console.log ($('.slick-current.slick-active').data('slick-index'));
           });
 
-        // if ($('.slick-current.slick-active').data('slide')
+    }
 //start note slider
         var rev = $('.rev_slider');
         rev.on('init', function(event, slick, currentSlide) {
@@ -111,8 +111,13 @@ $(function() {
         });
 //end note slider        
 
-
-      }
+  //anhor-menu
+  $('.main-menu a').on('click', function(e){
+    var dataName = $(this).attr('data-menuAnchor');
+    e.preventDefault();
+    var id = $('[data-anchor="'+ dataName + '"]');
+    $('html,body').stop().animate({ scrollTop: $(id).offset().top }, 1000);
+  });
 
 });
 

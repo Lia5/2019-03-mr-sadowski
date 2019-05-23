@@ -40,15 +40,15 @@ nav {
     display: none;
 }
 .main-menu {
-    width: 90%;
-    margin: 0 auto;
+    width: 85%;
+    margin-left: 8%;
     ul {
         display: flex;
         justify-content: space-around;
     }
     a  {
         display: block;
-        padding: 20px 30px;
+        padding: 10px 24px;
     }
     li {
         position: relative;
@@ -57,16 +57,16 @@ nav {
             bottom: 28px;
         }
         &:nth-child(2) {
-            bottom: 38px;
+            bottom: 35px;
         }
         &:nth-child(3) {
-            bottom: 48px;
+            bottom: 42px;
         }
         &:nth-child(4) {
-            bottom: 58px;
+            bottom: 50px;
         }
         &:nth-child(5) {
-            bottom: 68px;
+            bottom: 59px;
         }
     }
 }

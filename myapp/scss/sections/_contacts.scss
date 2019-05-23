@@ -1,0 +1,98 @@
+.contacts {
+    padding: 160px 10px 355px 163px;
+    background: url(../img/bg-contacts.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    &__title {
+        text-align: left;
+        margin-bottom: 27px;
+    }
+    &__top {
+        display: flex;
+        margin-bottom: 67px;
+    }
+    &__part {
+        width: 42%;
+        padding-top: 39px;
+    }
+    &__items {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        margin-right: 22px;
+        width: 30px;
+        height: 30px;
+        background: url(../img/social-sprite.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 0;
+        background-size: 100%;
+        &--mail {
+            background-position-y: -32px;
+        }
+        &--cite {
+            background-position-y: -66px;
+        }
+        &--insta {
+            background-position-y: -101px;
+        }
+    }
+    &__text {
+        display: block;
+    }
+    &__map {
+        width: 468px;
+        height: 346px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &-wrap {
+            background-color: #fff;
+            padding: 32px;
+            position: relative;
+            &:after, &:before {
+                position: absolute;
+                content: "";
+                background: url(../img/mark.png) no-repeat;
+                -webkit-background-size: 100% 100%;
+                background-size: 100%;
+                width: 184px;
+                height: 169px;
+            }
+            &:before {
+                top: -46px;
+                left: -75px;
+            }
+            &:after {
+                bottom: -43px;
+                right: -74px;
+            }
+
+        }
+    }
+    &__akcia {
+        font-size: 30px;
+        width: 49%;
+        padding: 31px 10px 10px 10px;
+        line-height: 1;
+        min-height: 295px
+    }
+    &__bottom {
+        .subtitle {
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+        input {
+            margin-bottom: 25px;
+        }
+        .input-agree {
+            padding: 9px 18px;
+            line-height: 1.2;
+        }
+    }
+}
