@@ -60,7 +60,30 @@ $(function() {
           });
 
     }
-//start note slider
+    if(jQuery('.calc__slider').length) {
+        $('.calc__slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: true,
+          dots: true,
+          prevArrow: '<div class="arrow-prev"></div>',
+          nextArrow: '<div class="arrow-next"></div>'
+        //   responsive: [
+        //     {
+        //       breakpoint: 1040,
+        //       settings: {
+        //         slidesToShow: 3.2,
+        //         slidesToScroll: 1,
+        //         infinite: true,
+        //         arrows: false,
+        //         dots: false
+        //       }
+        //     }  
+        //   ]
+        });
+    }
+    //start note slider
         var rev = $('.rev_slider');
         rev.on('init', function(event, slick, currentSlide) {
           var

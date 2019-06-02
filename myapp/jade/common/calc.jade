@@ -1,35 +1,89 @@
 secton(data-anchor="#calc")
     .wrap
         .calc
-            .title.calc__title Калькулятор стоимости
+            .title.calc__title Cтоимость
             .calc__top
-                .calc__description.shadow Здесь вы можете узнать примерную стоимость услуг по уходу за садом.
-                .calc__motivation.shadow Дополнительный текст, призыв к действию возможно, дополнительный текст, призыв к действию возможно.
-                .calc__action.shadow Акция ак ция акц ия акция акц ия акция кцияакция акция 
-            .calc__body-wrap 
-                .calc__body.shadow
-                    .calc__main
-                        form
-                            .calc__result 00000
-                            .form-line
-                                input(type="range")
-                            .form-line
-                                input(type="range")
-                            .form-line
-                                input(type="range")
-                            .form-line.last-range
-                                input(type="range")
-                            
-                            .form-line.calc__bottom
-                                .form-group
-                                    .input-agree
-                                        input(type="radio" name="period" class="agree" id="period1")
-                                        label(for="period1" class="checkbox-item") Постоянное обслуживание
-                                    .input-agree
-                                        input(type="radio" name="period" class="agree" id="period2")
-                                        label(for="period2" class="checkbox-item") Разовый выезд
-                                .form-group
-                                    .btn
-                                        input( type="submit" value="ПОСЧИТАТЬ")
-                    .calc__img
-                        img(src="img/calc-img.png", alt="flower")
+                .calc__description.shadow 
+                    | Ознакомьтесь с перечнем или закажите консультацию по телефону: 
+                    a.calc__tel(href="tel:78314230757") +7(831)423-07-57
+                .calc__motivation.shadow Не секрет, что сад - это живой организм, за ним нужен профессиональный уход. Часто даже работы в маленьком саду отнимают целый выходной. А в это время хотелось бы отдыхать и наслаждаться красотой природы!
+            .calc__main
+                .calc__body-wrap 
+                    .calc__body
+                        .calc__slider
+                            .calc__item-wrap
+                                .calc__item
+                                    .calc__name Разовый выезд
+                                    .calc__text
+                                        ul
+                                            li.calc__list Обрезка деревьев и кустарников
+                                            li.calc__list Обработка растений препаратами от вредителей и болезней
+                                            li.calc__list Прополка приствольных кругов
+                                            li.calc__list Подкормка деревьев и кустарников
+                                            li.calc__list Уход за цветниками – подкормка, полив, мульчирование, рыхление, прополка	
+                                    .calc__price--num 11 000 р
+                            .calc__item-wrap
+                                .calc__item
+                                    .calc__name Ремонт и восстановление:
+                                        .calc__subname (сад после зимы\запущенных садов)
+                                    .calc__text
+                                        p Приведение запущенного сада в надлежащий вид:
+                                        ul
+                                            li.calc__list прореживание плодовых деревьев и кустарников
+                                            li.calc__list обрезка деревьев
+                                            li.calc__list профилактические меры по защите сада от вредителей и болезней
+                                            li.calc__list подкормка деревьев и кустарников
+                                    .calc__price Число выездов зависит от количества растений или степени запущенности сада
+                            .calc__item-wrap
+                                .calc__item
+                                    .calc__name Годовой абонемент по уходу за садом
+                                    .calc__subname (сад после зимы\запущенных садов)
+                                    .calc__text
+                                        p Комплексный уход за садом
+                                        p с 1 апреля по 1 ноября
+                                        .calc__list 2 раза в месяц - 21 700
+                                        .calc__list 3 раза в месяц - 32 400
+                                        .calc__list 4 раза в месяц - 43 100
+                                    .calc__price--num ОТ 21 700 р
+                            .calc__item-wrap
+                                .calc__item
+                                    .calc__name Комлексный уход за газоном
+                                    .calc__text
+                                        ul
+                                            li.calc__list Аэрация
+                                            li.calc__list Стрижка
+                                            li.calc__list Подкормка
+                                            li.calc__list Ремонт
+                                    .calc__price--num 4 часа - 4 600 Р
+                            .calc__item-wrap
+                                .calc__item
+                                    .calc__name Уход за инженерными коммуникациями
+                                    .calc__text
+                                        ul
+                                            li.calc__list Очистка ливневых систем от мусора
+                                            li.calc__list Борьба с сорняками в покрытиях
+                                            li.calc__list Профилактика высолов на покрытиях
+                                    .calc__price.calc__price--middle Стоимость индивидуальная
+                            .calc__item-wrap
+                                .calc__item
+                                    .calc__name Подготовка сада к зиме
+                                    .calc__text
+                                        ul
+                                            li.calc__list Влагозарядный полив
+                                            li.calc__list Укрытие растений на зиму
+                                    .calc__price.calc__price--middle Стоимость индивидуальная
+                            .calc__item-wrap
+                                .calc__item
+                                    .calc__name Топиарная (фигурная) стрижка деревьев и кустарников
+                                    .calc__text
+                                        ul
+                                            li.calc__list Кронирование
+                                            li.calc__list Стрижка живой изгороди
+                                            li.calc__list Стрижка бонсай
+                                    .calc__price.calc__price--middle Стоимость индивидуальная         
+                    .calc__bottom.shadow 
+                        p *В стоимость сервисных работ входит цена всех препаратов и удобрений. Производители: Нидерланды, Германия, США, Россия. 
+                        p **Стоимость варьируется от особенностей участка и удаленности. 
+                        p Цены действительны по Н. Новгороду +10 км.
+                .calc__img
+                    img(src="img/calc-img.png", alt="flower")
