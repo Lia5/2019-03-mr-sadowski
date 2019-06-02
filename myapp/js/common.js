@@ -9,28 +9,20 @@ $(function() {
           dots: false,
           prevArrow: '<div class="arrow-prev"></div>',
           nextArrow: '<div class="arrow-next"></div>'
-
-
-        //   responsive: [
-        //     {
-        //       breakpoint: 1040,
-        //       settings: {
-        //         slidesToShow: 3.2,
-        //         slidesToScroll: 1,
-        //         infinite: true,
-        //         arrows: false,
-        //         dots: false
-        //       }
-        //     }  
-        //   ]
         });
 
 
         $('a[data-slide]').click(function(e) {
             e.preventDefault();
             var slideno = $(this).data('slide');
-            
+            var pic = $(this).data('pic');
             $('.tale-slider').slick('slickGoTo', slideno - 1);
+            $('.choise1').attr('src', "img/tale/tale"+pic+".jpg");
+            var pic2 = $(this).data('pic');
+            $('.choise2').attr('src', "img/tale/tale"+pic2+".jpg");
+            var giftName = $(this).data('gift');
+            $('.choise3').attr('value', giftName);
+            $('.choise-gift').html('Оставьте, пожалуйста, свои данные, чтобы я смог с вами связаться и передать подарок');
         });
         
           $('.tale-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -39,24 +31,6 @@ $(function() {
             if (nextSlide==5) {
                 nextSlide=9;
             }
-            // $('.arrow-next').click(function(e) {
-            //     e.preventDefault();
-            //         console.log('gfhvg');
-            //     $('.tale-slider').slick('slickGoTo', 7);
-            // });
-            // if (nextSlide==3) {
-            //     console.log('gfhvg');
-            //     $('.arrow-next').click(function(e) {
-            //         e.preventDefault();
-                    
-            //         $('.tale-slider').slick({
-            //              slidesToScroll: 2
-            //         });
-            //     });
-            // }
-            
-            
-            // console.log ($('.slick-current.slick-active').data('slick-index'));
           });
 
     }
