@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function(){
      // Опции.
      // Своё изображение иконки метки.
      iconLayout: 'default#imageWithContent',
-     iconImageHref: 'img/icons/marker.svg',
+     iconImageHref: '../img/icons/marker.svg',
     //  // Размеры метки.
      iconImageSize: [57, 78]
  });
