@@ -43,18 +43,6 @@ $(function() {
           dots: true,
           prevArrow: '<div class="arrow-prev"></div>',
           nextArrow: '<div class="arrow-next"></div>'
-        //   responsive: [
-        //     {
-        //       breakpoint: 1040,
-        //       settings: {
-        //         slidesToShow: 3.2,
-        //         slidesToScroll: 1,
-        //         infinite: true,
-        //         arrows: false,
-        //         dots: false
-        //       }
-        //     }  
-        //   ]
         });
     }
     //start note slider
@@ -104,7 +92,6 @@ $(function() {
           customPaging: function(slider, i) {
             return '';
           },
-          /*infinite: false,*/
         });
 //end note slider        
 
@@ -154,6 +141,39 @@ document.addEventListener('DOMContentLoaded', function(){
     for (i = 0; i < myTabs.length; i++) {
 		myTabs[i].addEventListener("click", myTabClicks)
 	}
+
+ // MAP
+      
+ ymaps.ready(init);
+ function init(){     
+   var myMap = new ymaps.Map("map", {
+         center: [56.327780, 43.995018],
+         zoom: 14
+     }),
+     
+     // Создаем метку с помощью вспомогательного класса.
+     myPlacemark1 = new ymaps.Placemark([56.327780, 43.995018], {
+     // Свойства.
+     // Содержимое иконки, балуна и хинта.
+     balloonContentBody: 'Mr. Sadowski ',
+     balloonContentFooter: 'г. Нижний Новгород, ул.Почаинская, 13А',
+     hintContent: 'Mr. Sadowski '
+ }, {
+     // Опции.
+     // Своё изображение иконки метки.
+    //  iconLayout: 'default#imageWithContent',
+    //  iconImageHref: 'img/icons/marker.svg',
+    //  // Размеры метки.
+    //  iconImageSize: [57, 78]
+ });
+    
+
+
+ // Добавляем все метки на карту.
+ myMap.geoObjects.add(myPlacemark1);
+ // myMap.behaviors.disable('scrollZoom');
+
+ };
 
 
 

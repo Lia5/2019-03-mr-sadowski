@@ -1,4 +1,5 @@
 .contacts {
+    position: relative;
     padding: 160px 10px 355px 163px;
     background: url(../img/bg-contacts.png);
     background-repeat: no-repeat;
@@ -46,10 +47,10 @@
         display: block;
     }
     &__map {
+
         width: 468px;
         height: 346px;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background: green;
         &-wrap {
             background-color: #fff;
             padding: 32px;
@@ -93,6 +94,30 @@
         .input-agree {
             padding: 9px 18px;
             line-height: 1.2;
+        }
+    }
+    &__action {
+        text-align: center;
+        line-height: 1.2;
+        color: #fff;
+        background-color: #926038;
+        max-width: 213px;
+        position: absolute;
+        right: 62px;
+        bottom: 267px;
+        padding: 89px 20px 37px;
+        transform: rotate(-338deg);
+        font-size: 30px;
+        &:before {
+            position: absolute;
+            content: "";
+            background: url(../img/skrep.png) no-repeat;
+            background-size: 100%;
+            width: 75px;
+            height: 122px;
+            right: 0;
+            top: -22px;
+            transform: rotate(+338deg);
         }
     }
 }
