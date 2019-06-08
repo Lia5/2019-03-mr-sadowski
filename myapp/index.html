@@ -9,7 +9,7 @@
     <meta name="description" content="Описание сайта">
     <meta name="author" lang="ru" content="Helen Portna">
     <link rel="stylesheet" href="css/main.min.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=17fb840a-8186-473e-a03a-bb3e00537478&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=17fb840a-8186-473e-a03a-bb3e00537478&amp;lang=ru_RU" type="text/javascript"></script>
     <title>Mr. Sadowski </title>
   </head>
   <body>
@@ -33,10 +33,10 @@
             <nav class="main-menu"> 
               <ul>
                 <li><a href="#" data-menuAnchor="#calc">Калькулятор</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Советы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#" data-menuAnchor="#history">О нас</a></li>
+                <li><a href="#" data-menuAnchor="#ideal">Услуги</a></li>
+                <li><a href="#" data-menuAnchor="#notes">Советы</a></li>
+                <li><a href="#" data-menuAnchor="#contacts">Контакты</a></li>
               </ul>
             </nav>
           </div>
@@ -217,7 +217,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section data-anchor="#history">
       <div class="wrap">
         <div class="history">
           <h2 class="title title--white history__title">История</h2>
@@ -235,7 +235,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section data-anchor="#ideal">
       <div class="wrap">
         <div class="ideal">
           <div class="ideal__title-wrap">
@@ -247,7 +247,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section data-anchor="#notes">
       <div class="wrap">
         <div class="notes">
           <h2 class="title title--white notes__title">Записки mr. Sadowski</h2>
@@ -305,7 +305,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer data-anchor="#contacts">
       <div class="wrap">
         <div class="contacts">
           <div class="contacts__top">

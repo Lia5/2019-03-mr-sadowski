@@ -101,6 +101,14 @@ $(function() {
     e.preventDefault();
     var id = $('[data-anchor="'+ dataName + '"]');
     $('html,body').stop().animate({ scrollTop: $(id).offset().top }, 1000);
+
+    if( window.innerWidth <= 720 || window.screen.width <= 720){
+      var nav = document.querySelector('.main-menu');
+      nav.classList.toggle('active');
+      var navGamb = document.querySelector('.menu-toggle');
+      navGamb.classList.toggle('active');
+    }
+
   });
 
 });

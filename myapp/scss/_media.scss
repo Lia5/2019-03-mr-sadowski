@@ -420,6 +420,7 @@
             transition-duration: .3s;
         }
         &.active {
+            position: fixed;
             .one, 
             .three {
                 background: #fff;
