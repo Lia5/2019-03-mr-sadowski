@@ -45,6 +45,33 @@
             margin-right: 6%;
         }
     }
+    .tale__var1, .tale__var3 {
+        left: 37px;
+        bottom: 49px;
+    }
+    .tale__var2, .tale__var4 {
+        right: 25px;
+        bottom: 49px;
+    }
+    .tale__var5 {
+        width: auto;
+        right: 24vw;
+        bottom: 20vw;
+        padding: 11vw 0.5vw 0.8vw;
+    }
+    .tale__var6 {
+        width: auto;
+        right: 17vw;
+        bottom: 20vw;
+        padding: 11vw 0.5vw 0.8vw;
+    }
+    .tale__var7 {
+        width: auto;
+        right: 8vw;
+        bottom: 20vw;
+        padding: 11vw 0.5vw 0.8vw;
+    }
+    
 }
 @media only screen and (max-width: 1174px) {
     .calc {
@@ -177,6 +204,24 @@
 
 
     }
+    .tale__var {
+        font-size: 19px
+    }
+    .tale__var1, .tale__var3 {
+        left: 0px;
+        bottom: 44px;
+    }
+    .tale__var2, .tale__var4 {
+        right: 0px;
+        bottom: 44px;
+    }
+    .tale__form {
+        padding: 5vw 8vw 10vw;
+    }
+    .tale__form .input--wrap {
+        width: 100%;
+        background-size: 100%;
+    }
 }
 @media only screen and (max-width: 1024px) {
     nav a {
@@ -255,6 +300,25 @@
             font-size: 20px;
         }
     }
+    .tale__var1,
+    .tale__var2, .tale__var3, .tale__var4 {
+        bottom: 34px;
+    }
+    .tale__form .checkbox-item {
+        font-size: 17px;
+
+    }
+    .tale__form .input-agree p {
+        font-size: 17px;
+        padding-right: 20px;
+    }
+    .tale__form .choise-gift {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    .tale__form .input--wrap input {
+        padding-top: 22px;
+    }
 }
 @media only screen and (max-width: 920px) {
     .title {
@@ -325,6 +389,31 @@
             width: 63%;
         }
     }
+    .tale__var {
+        font-size: 13px;
+
+
+    }
+    .tale__var1,
+    .tale__var2, .tale__var3, .tale__var4 {
+        bottom: 29px;
+        width: 233px;
+    }
+    .tale__form .input--wrap input {
+        padding: 11px 29px 9px;
+        &::placeholder {
+            font-size: 15px;
+        }
+    }
+    .tale__form .checkbox-item {
+        font-size: 14px;
+    }
+    .tale__form .input-agree p {
+        font-size: 14px;
+    }
+    .tale__form .input--wrap {
+        background-size: 100% 80%;
+    }
 }
 @media only screen and (max-width: 785px) {
     .calc {
@@ -392,6 +481,12 @@
             padding: 89px 14px 22px;
             font-size: 15px;
         }
+    }
+    .tale__form {
+        padding: 8vw 3vw 7vw;
+    }
+    .tale__item-img {
+        opacity: 0;
     }
 }
 @media only screen and (max-width: 720px) {
@@ -553,6 +648,25 @@
         .contacts__map {
             height: 241px;
         }
+    }
+    .tale__var1,
+    .tale__var2, .tale__var3, .tale__var4 {
+        bottom:2vw;
+        width: 33vw;
+    }
+    .tale__var5,
+    .tale__var6,
+    .tale__var7 {
+        font-size: 11px;
+    }
+    .tale__form .choise-gift {
+        font-size: 13px;
+    }
+    .tale__form .input--wrap input {
+        padding: 4px 29px 2px;
+    }
+    .tale__form .input-agree p {
+        margin: 0;
     }
 }
 @media only screen and (max-width: 586px) {
@@ -720,7 +834,26 @@
             transform: rotate(-353deg);
         }
     }
-    
+    .tale__form {
+        padding: 8vw 1vw 7vw;
+    }
+    .tale__form .input--wrap input {
+        font-size: 12px;
+        padding: 0px 20px 11px;
+        margin-bottom: 5px;
+    }
+    .tale__form .input--wrap input::placeholder {
+        font-size: 12px;
+    }
+    .tale__form .checkbox-item {
+        font-size: 11px;
+    }
+    .tale__form .input-agree p {
+        font-size: 11px;
+    }
+    .choise-gift {
+        font-size: 11px;
+    }
 }
 @media only screen and (max-width: 500px) {
     .logo {
@@ -741,7 +874,58 @@
         padding-left: 10%;
         padding-right: 10%;
     }
-
+    .tale__var5,
+    .tale__var6,
+    .tale__var7 {
+        font-size: 8px;
+    }
+    .tale__form {
+         [type=submit] {
+            padding: 4px;
+         }
+         .btn {
+            background-size: 100% 100%;
+            input {
+                margin-bottom: 5px;
+                font-size: 11px;
+            }
+         }
+    }
+    .tale__form .input--wrap input {
+        display: block;
+        margin-bottom: 0;
+        padding: 5px 20px 5px;
+        font-size: 10px;
+        &::placeholder {
+            font-size: 10px;
+        }
+    }
+    .tale__form .checkbox-item {
+        font-size: 7px;
+    }
+    .tale__form .input-agree p {
+        font-size: 7px;
+    }
+    .tale__form .choise-gift {
+        font-size: 8px;
+        margin: 3px 0;
+    }
+    .tale__form .input--wrap {
+        height: 25px;
+    }
+    .tale__form {
+        .checkbox-item:before {
+            background-size: 100% 100%;
+            width: 15px;
+            height: 15px;
+        }
+        .checkbox-item:after {
+            background-size: 100% 100%;
+            width: 15px;
+            height: 21px;
+            left: 5px;
+        }
+    }
 }
 @media only screen and (max-width: 450px) {
   .calc {
@@ -822,6 +1006,13 @@
             }
         }
     }
+    .tale__var {
+        font-size: 8px;
+    }
+    .tale__var1, .tale__var2, .tale__var3, .tale__var4 {
+        bottom: 0;
+    }
+
 }
 @media only screen and (max-width: 320px) {
 

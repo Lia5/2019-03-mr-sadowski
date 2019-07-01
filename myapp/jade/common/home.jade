@@ -28,9 +28,14 @@ section
                     a(href="#" data-slide="10" data-gift="Щавель").tale__var.tale__var6 Щавель    
                     a(href="#" data-slide="10" data-gift="Незабудка").tale__var.tale__var7 Незабудка
                 .tale__item
-                    img(src="img/tale/tale12.jpg", alt="tale")
+                    img(src="img/tale/tale12.jpg", alt="tale", class="tale__item-img")
                     .tale__form
-                        form(action="#")
+                        form
+                            // Hidden Required Fields
+                            input(type='hidden', name='project_name', value='Sadowski')
+                            input(type='hidden', name='admin_email', value='liaforweb@gmail.com')
+                            input(type='hidden', name='form_subject', value='Sadowski - Отправить подарок')
+                            // END Hidden Required Fields
                             input(class="choise3" type="text" class="display-none" name="gift" value="Подарок не выбран")
                             //- p.choise-gift Оставьте, пожалуйста, свои данные, чтобы я смог с вами связаться и передать подарок
                             p.choise-gift Прежде, чем отправить форму выберете подарок на предидущей вкладке
@@ -39,7 +44,7 @@ section
                                     input(type="text" name="name" placeholder="Имя" required)
                             .form-line
                                 .input--wrap
-                                    input(type="tel" name="name" placeholder="Телефон" required)
+                                    input(type="tel" name="tel" placeholder="Телефон" required)
                             .form-line
                                 .btn
                                     input( type="submit" value="Отправить")

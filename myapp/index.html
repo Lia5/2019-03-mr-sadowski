@@ -56,9 +56,14 @@
             <div class="tale__item"><img src="img/tale/tale8.jpg" alt="tale" class="choise1"></div>
             <div class="tale__item"><img src="img/tale/tale10.jpg" alt="tale"></div>
             <div class="tale__item"><img src="img/tale/tale11.jpg" alt="tale"><a href="#" data-slide="10" data-gift="Морошка" class="tale__var tale__var5">Морошка</a><a href="#" data-slide="10" data-gift="Щавель" class="tale__var tale__var6">Щавель    </a><a href="#" data-slide="10" data-gift="Незабудка" class="tale__var tale__var7">Незабудка</a></div>
-            <div class="tale__item"><img src="img/tale/tale12.jpg" alt="tale">
+            <div class="tale__item"><img src="img/tale/tale12.jpg" alt="tale" class="tale__item-img">
               <div class="tale__form">
-                <form action="#">
+                <form>
+                  <!-- Hidden Required Fields-->
+                  <input type="hidden" name="project_name" value="Sadowski">
+                  <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+                  <input type="hidden" name="form_subject" value="Sadowski - Отправить подарок">
+                  <!-- END Hidden Required Fields-->
                   <input type="text" name="gift" value="Подарок не выбран" class="choise3 display-none">
                   <p class="choise-gift">Прежде, чем отправить форму выберете подарок на предидущей вкладке</p>
                   <div class="form-line">
@@ -68,7 +73,7 @@
                   </div>
                   <div class="form-line">
                     <div class="input--wrap">
-                      <input type="tel" name="name" placeholder="Телефон" required>
+                      <input type="tel" name="tel" placeholder="Телефон" required>
                     </div>
                   </div>
                   <div class="form-line">
@@ -336,7 +341,12 @@
               <h2 class="title contacts__title">Позвоните мне</h2>
               <div class="subtitle">Мы будем рады ответить на любые садовые вопросы</div>
               <div class="contacts__form">
-                <form action="#">
+                <form>
+                  <!-- Hidden Required Fields-->
+                  <input type="hidden" name="project_name" value="Sadowski">
+                  <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+                  <input type="hidden" name="form_subject" value="Sadowski - Блок контакты">
+                  <!-- END Hidden Required Fields-->
                   <div class="form-line">
                     <div class="input--wrap">
                       <input type="text" name="name" placeholder="Имя" required>
@@ -344,7 +354,7 @@
                   </div>
                   <div class="form-line">
                     <div class="input--wrap">
-                      <input type="tel" name="name" placeholder="Телефон" required>
+                      <input type="tel" name="tel" placeholder="Телефон" required>
                     </div>
                   </div>
                   <div class="form-line">

@@ -25,13 +25,18 @@ footer(data-anchor="#contacts")
                     h2.title.contacts__title Позвоните мне
                     .subtitle Мы будем рады ответить на любые садовые вопросы
                     .contacts__form
-                        form(action="#")
+                        form
+                            // Hidden Required Fields
+                            input(type='hidden', name='project_name', value='Sadowski')
+                            input(type='hidden', name='admin_email', value='liaforweb@gmail.com')
+                            input(type='hidden', name='form_subject', value='Sadowski - Блок контакты')
+                            // END Hidden Required Fields
                             .form-line
                                 .input--wrap
                                     input(type="text" name="name" placeholder="Имя" required)
                             .form-line
                                 .input--wrap
-                                    input(type="tel" name="name" placeholder="Телефон" required)
+                                    input(type="tel" name="tel" placeholder="Телефон" required)
                             .form-line
                                 .input-agree
                                     input(type="checkbox" name="agree2" class="agree" id="agree2")
